@@ -2,10 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url("Background.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white; /* Assurez-vous que le texte est visible sur le fond */
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7); /* noir semi-transparent pour une meilleure lisibilité */
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -16,8 +20,8 @@ header {
 }
 
 .nom-prenom {
-    margin-left: 20px; /* Espace à gauche */
-    font-size: 2em; /* Taille de la police augmentée */
+    margin-left: 20px;
+    font-size: 2em;
 }
 
 nav ul {
@@ -43,6 +47,7 @@ section {
     max-height: 0;
     opacity: 0;
     transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
 }
 
 .section-visible {
@@ -51,7 +56,7 @@ section {
 }
 
 #accueil {
-    background: #f4f4f4;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
     text-align: center;
 }
 
@@ -61,20 +66,23 @@ section {
 }
 
 #competences ul li {
-    background: #ddd;
+    background: rgba(255, 255, 255, 0.2); /* Fond semi-transparent */
     margin: 0.5em 0;
     padding: 0.5em;
+    color: white; /* Assurez-vous que le texte est visible */
 }
 
 .competence {
     position: relative;
     display: inline-block;
+    width: 100%;
+    margin-bottom: 1em;
 }
 
 .competence:hover::after {
-    content: attr(data-percentage) "%"; /* Utilisez l'attribut data-percentage */
+    content: attr(data-percentage) "%";
     position: absolute;
-    top: -20px; /* Ajustez la position verticale */
+    top: -20px;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
@@ -83,26 +91,54 @@ section {
     font-size: 12px;
 }
 
+.progress-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.progress {
+    height: 20px;
+    width: 0;
+    transition: width 0.5s;
+}
+
+.rouge {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.vert {
+    background-color: green;
+}
+
 .projet {
     position: relative;
 }
 
 .projet .project {
     position: relative;
-    overflow: hidden; /* Pour cacher le texte qui dépasse de l'image */
-    margin-bottom: 10px; /* Espacement entre les projets */
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .projet .project img {
-    max-width: 10%; /* Utilisez 100% de la largeur du conteneur parent */
-    height: auto; /* Permet à l'image de conserver son ratio hauteur/largeur */
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin: 0 auto; /* Centre l'image horizontalement */
-    transition: transform 0.3s ease; /* Animation pour le zoom au survol */
+    margin: 0 auto;
+    transition: transform 0.3s ease;
 }
 
 .projet .project:hover img {
-    transform: scale(1.1); /* Zoom au survol de l'image */
+    transform: scale(1.1);
 }
 
 .projet .project .project-description {
@@ -116,15 +152,15 @@ section {
     box-sizing: border-box;
     transition: opacity 0.3s ease;
     opacity: 0;
-    text-align: center; /* Centre le texte horizontalement */
+    text-align: center;
 }
 
 .projet .project:hover .project-description {
-    opacity: 1; /* Afficher la description au survol */
+    opacity: 1;
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     text-align: center;
     padding: 0.3em 0;
@@ -146,17 +182,20 @@ form label {
 form input, form textarea {
     padding: 0.5em;
     margin-bottom: 1em;
+    background: rgba(255, 255, 255, 0.2); /* Fond semi-transparent */
+    color: white; /* Assurez-vous que le texte est visible */
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 form button {
     padding: 0.5em;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     border: none;
 }
 
 #a-propos div {
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -164,12 +203,11 @@ form button {
     max-width: 100%;
     height: auto;
 }
-/* Styles pour le bouton "Lien" */
+
 nav ul li:nth-last-child(2) {
-    margin-right: 15px; /* Espacement à droite pour le bouton Lien */
+    margin-right: 15px;
 }
 
-/* Styles pour les sections LinkedIn et CV */
 #lien {
     padding: 2em;
     text-align: center;
@@ -188,14 +226,14 @@ nav ul li:nth-last-child(2) {
 .lien {
     margin: 0 10px;
     position: relative;
-    overflow: hidden; /* Pour cacher le texte qui dépasse de l'image */
+    overflow: hidden;
 }
 
 .lien img {
     width: 100px;
     height: auto;
     margin-bottom: 0.5em;
-    transition: transform 0.3s ease; /* Animation pour le zoom au survol */
+    transition: transform 0.3s ease;
 }
 
 .lien p {
@@ -204,20 +242,21 @@ nav ul li:nth-last-child(2) {
     bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
-    opacity: 0; /* Initialement invisible */
-    transition: opacity 0.3s ease; /* Animation de transition */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .lien:hover img {
-    transform: scale(1.1); /* Zoom au survol de l'image */
+    transform: scale(1.1);
 }
 
 .lien:hover p {
-    opacity: 1; /* Afficher le texte au survol */
+    opacity: 1;
 }
+
 #a-propos {
     padding: 2em;
-    background-color: #f4f4f4;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
 }
 
 .conteneur {
@@ -225,28 +264,38 @@ nav ul li:nth-last-child(2) {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 20px; /* Ajoute de l'espace entre les sections */
 }
 
-.presentation,
-.suivi-vie {
-    flex-basis: calc(50% - 10px); /* Moitié de la largeur du conteneur parent, moins un espace de 10px */
+.presentation {
+    display: flex;
+    align-items: flex-start; /* Aligner les éléments en haut */
+    flex-basis: 30%; /* Donner 30% de l'espace à la présentation */
 }
 
 .presentation img {
-    max-width: 100%;
+    width: 200px; /* Réduire la largeur de l'image */
     height: auto;
-    display: block;
-    margin-bottom: 1em;
+    margin-right: 20px; /* Espace entre l'image et le texte */
+}
+
+.presentation-text {
+    max-width: 100%;
+}
+
+.suivi-vie {
+    flex-basis: 70%; /* Donner 70% de l'espace à la section suivi de vie */
 }
 
 .suivi-vie h2 {
-    margin-top: 0; /* Supprimer la marge supérieure du titre */
+    margin-top: 0;
 }
 
 .suivi-vie p {
-    margin-top: 0; /* Supprimer la marge supérieure des paragraphes */
-    margin-bottom: 0.5em; /* Ajouter un espacement entre les paragraphes */
+    margin-top: 0;
+    margin-bottom: 1em; /* Augmenter l'espacement entre les paragraphes */
 }
+
 .Parcours {
-    margin-left : 2em !important;
+    margin-left: 2em !important;
 }

@@ -12,17 +12,21 @@
         <nav>
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#a-propos">À propos</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="entreprise">Entreprise</a></li> 
-        <li><a href="#projets-personnels">Projets Personnels</a></li>
-        <li><a href="#projets-professionnels">Projets Professionnels</a></li>
-        <li><a href="#lien">Lien</a></li> 
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li> 
+                <li><a href="#projets-personnels">Projets Personnels</a></li>
+                <li><a href="#projets-professionnels">Projets Professionnels</a></li>
+                <li><a href="#lien">Lien</a></li> 
             </ul>
         </nav>
     </header>
 
     <section id="accueil">
+        <section id="accueil" class="section-visible">
+            <!-- Contenu de la section accueil -->
+        </section>
+        
         <h1>Bienvenue sur mon portfolio</h1>
         <p>Je suis actuellement un étudiant en Alternance BTS SIO option SISR.</p>
     </section>
@@ -30,33 +34,50 @@
     <section id="a-propos">
         <div class="conteneur">
             <div class="presentation">
-                <img src="C:\Users\Thoma\Desktop\Portfolio vrai\Portfolio\matronche.jpg" alt="Votre Nom">
-                <h2>Présentation</h2>
-                <p>Je suis passionné par l'informatique depuis tout petit et rêve d'en faire mon métier, surtout dans le domaine des réseaux et de l'infrastructure. Je suis actuellement étudiant en BTS SIO option SISR.</p>
+                <img src="C:\Users\Thoma\Downloads\PortfolioVrai\Portfolio vrai\Portfolio\matronche.jpg" alt="Votre Nom">
+                <div class="presentation-text">
+                    <h2>Présentation</h2>
+                    <p>Je suis passionné par l'informatique depuis tout petit et rêve d'en faire mon métier, surtout dans le domaine des réseaux et de l'infrastructure. Je suis actuellement étudiant en BTS SIO option SISR.</p>
+                </div>
             </div>
-            <div class="Parcours">
-                <h2>Parcours</h2>
+            <div class="suivi-vie">
+                <h2>Suivi de vie</h2>
                 <p>2018-2020 -Bac Technologique STI2D, lycée Jean François Champollion</p>
-                <p>2020-2021 IUT MONTPELLIER Du accesDu acces Nouvelle formation créée specialement cette année appellée "Du acces".</p>
+                <p>2020-2021 IUT MONTPELLIER Du acces Nouvelle formation créée specialement cette année appellée "Du acces".</p>
                 <p>2021-2022 Employé polyvalent à Mcdonald </p>
                 <p>2022-2023 ETPA école de jeux vidéo Programmation informatique</p>
                 <p>2023-2025 Esicad BTS SIO Système informatique aux organisation option SISR en alternance chez SEPTEO</p>
-                <!-- Ajoutez d'autres éléments de suivi de vie ici si nécessaire -->
             </div>
         </div>
-    </section>    
-
+    </section>
+    
     <section id="competences">
         <h2>Compétences</h2>
         <ul>
-            <li><span class="competence" data-percentage="25">HTML et CSS</span></li>
-            <li><span class="competence" data-percentage="70">Réparation informatique en général</span></li>
-            <li><span class="competence" data-percentage="70">Anglais B2</span></li>
+            <li>
+                <span class="competence" data-percentage="25">HTML et CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 25%;"></div>
+                </div>
+            </li>
+            <li>
+                <span class="competence" data-percentage="70">Réparation informatique en général</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </li>
+            <li>
+                <span class="competence" data-percentage="70">Anglais B2</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </li>
         </ul>
     </section>
        
     <section id="entreprise">
         <h1>Septeo</h1>
+        <img src="C:\Users\Thoma\Desktop\Portfolio vrai\Portfolio\entreprise.jpg" alt="Entreprise">
         <p>Je suis actuellement un étudiant en Alternance BTS SIO option SISR.</p>
     </section>
 
@@ -65,7 +86,7 @@
         <div class="projet">
             <div class="project">
                 <a href="projet1.html">
-                    <img src="C:\Users\Thoma\Desktop\Portfolio vrai\Portfolio\Projet personnel 1\Screenshot_20240531_013428_One UI Home.jpg" alt="Description de l'image" width="200" height="100">
+                    <img src="C:\Users\Thoma\Downloads\PortfolioVrai\Portfolio vrai\Portfolio\Projet personnel 1\Screenshot_20240531_013428_One UI Home.jpg" alt="Description de l'image" width="200" height="100">
                 </a>
                 <div class="project-description">Voici mon projet personnel qui consiste à créer une application pour avoir le flux RSS d'un jeu vidéo pour avoir toutes les actualités.</div>
             </div>
@@ -73,7 +94,7 @@
         <div class="projet">
             <div class="project">
                 <a href="projet2.html">
-                    <img src="C:\Users\Thoma\Desktop\Portfolio vrai\Portfolio\linux.svg.png" alt="Image Projet Personnel 2">
+                    <img src="C:\Users\Thoma\Downloads\PortfolioVrai\Portfolio vrai\Portfolio\linux.svg.png" alt="Image Projet Personnel 2">
                 </a>
                 <div class="project-description">Projet en cours sur la création de deux serveurs (un serveur web et un serveur de jeu vidéo).</div>
             </div>
@@ -81,12 +102,11 @@
         <div class="projet">
             <div class="project">
                 <a href="projet5.html">
-                    <img src="C:\Users\Thoma\Desktop\Portfolio vrai\Portfolio\windows server.png" alt="Image Projet Personnel 2">
+                    <img src="C:\Users\Thoma\Downloads\PortfolioVrai\Portfolio vrai\Portfolio\windows server.png" alt="Image Projet Personnel 2">
                 </a>
                 <div class="project-description">Création d'un serveur de jeux vidéo avec HeidiSQL et Mariadb.</div>
             </div>
         </div>
-        <!-- Ajoutez plus de projets personnels ici si nécessaire -->
     </section>    
 
     <section id="projets-professionnels">
@@ -107,7 +127,6 @@
                 <div class="project-description">Projet de recensement </div>
             </div>
         </div>
-        <!-- Ajoutez plus de projets professionnels ici si nécessaire -->
     </section>    
 
     <section id="contact">
@@ -131,12 +150,12 @@
         <div class="liens">
             <div class="lien">
                 <a href="https://www.linkedin.com/in/thomas-s-b4975b1b5/" target="_blank">
-                    <img src="C:\Users\Thoma\Desktop\Portfolio vrai\Portfolio\linkedin.png" alt="LinkedIn" width="100">
+                    <img src="C:\Users\Thoma\Downloads\PortfolioVrai\Portfolio vrai\Portfolio\linkedin.png" alt="LinkedIn" width="100">
                 </a>
             </div>
             <div class="lien">
                 <a href="C:\Users\Thoma\OneDrive\Bureau\Portfolio\cv.pdf" target="_blank">
-                    <img src="c:\Users\Thoma\Desktop\Portfolio vrai\Portfolio\CV logo.jpg" alt="CV" width="100">
+                    <img src="C:\Users\Thoma\Downloads\PortfolioVrai\Portfolio vrai\Portfolio\CV logo.jpg" alt="CV" width="100">
                 </a>
             </div>
         </div>
