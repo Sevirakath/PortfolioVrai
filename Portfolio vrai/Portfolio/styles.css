@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nom-prenom {
+    margin-left: 20px; /* Espace à gauche */
+    font-size: 2em; /* Taille de la police augmentée */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+    margin: 2em 0;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.section-visible {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+#accueil {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#competences ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#competences ul li {
+    background: #ddd;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+
+.competence {
+    position: relative;
+    display: inline-block;
+}
+
+.competence:hover::after {
+    content: attr(data-percentage) "%"; /* Utilisez l'attribut data-percentage */
+    position: absolute;
+    top: -20px; /* Ajustez la position verticale */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.projet {
+    position: relative;
+}
+
+.projet .project {
+    position: relative;
+    overflow: hidden; /* Pour cacher le texte qui dépasse de l'image */
+    margin-bottom: 10px; /* Espacement entre les projets */
+}
+
+.projet .project img {
+    max-width: 10%; /* Utilisez 100% de la largeur du conteneur parent */
+    height: auto; /* Permet à l'image de conserver son ratio hauteur/largeur */
+    display: block;
+    margin: 0 auto; /* Centre l'image horizontalement */
+    transition: transform 0.3s ease; /* Animation pour le zoom au survol */
+}
+
+.projet .project:hover img {
+    transform: scale(1.1); /* Zoom au survol de l'image */
+}
+
+.projet .project .project-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+.projet .project:hover .project-description {
+    opacity: 1; /* Afficher la description au survol */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.3em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+form button {
+    padding: 0.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+#a-propos div {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#photo-profil {
+    max-width: 100%;
+    height: auto;
+}
+/* Styles pour le bouton "Lien" */
+nav ul li:nth-last-child(2) {
+    margin-right: 15px; /* Espacement à droite pour le bouton Lien */
+}
+
+/* Styles pour les sections LinkedIn et CV */
+#lien {
+    padding: 2em;
+    text-align: center;
+}
+
+#lien h2 {
+    margin-bottom: 1em;
+}
+
+.liens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lien {
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden; /* Pour cacher le texte qui dépasse de l'image */
+}
+
+.lien img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.5em;
+    transition: transform 0.3s ease; /* Animation pour le zoom au survol */
+}
+
+.lien p {
+    margin: 0;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Initialement invisible */
+    transition: opacity 0.3s ease; /* Animation de transition */
+}
+
+.lien:hover img {
+    transform: scale(1.1); /* Zoom au survol de l'image */
+}
+
+.lien:hover p {
+    opacity: 1; /* Afficher le texte au survol */
+}
+#a-propos {
+    padding: 2em;
+    background-color: #f4f4f4;
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.presentation,
+.suivi-vie {
+    flex-basis: calc(50% - 10px); /* Moitié de la largeur du conteneur parent, moins un espace de 10px */
+}
+
+.presentation img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.suivi-vie h2 {
+    margin-top: 0; /* Supprimer la marge supérieure du titre */
+}
+
+.suivi-vie p {
+    margin-top: 0; /* Supprimer la marge supérieure des paragraphes */
+    margin-bottom: 0.5em; /* Ajouter un espacement entre les paragraphes */
+}
+.Parcours {
+    margin-left : 2em !important;
+}

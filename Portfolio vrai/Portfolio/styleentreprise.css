@@ -1,0 +1,23 @@
+#entreprise {
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centrage horizontal du contenu */
+    padding: 2em; /* Espacement autour du contenu */
+    background-size: cover; /* Ajustement de la taille de l'image de fond */
+    background-position: center; /* Centrage de l'image de fond */
+}
+
+.entreprise-info {
+    max-width: 800px; /* Largeur maximale du contenu de l'entreprise */
+    margin: 0 auto; /* Centrage horizontal du contenu */
+}
+
+.entreprise-info img {
+    max-width: 100%; /* Ajustement de la largeur de l'image de l'entreprise */
+    height: auto; /* Permet à l'image de conserver son ratio hauteur/largeur */
+    margin-bottom: 20px; /* Espacement en bas de l'image */
+}
+
+.entreprise-info p {
+    font-size: 1.2em; /* Taille de la police du texte */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+}
