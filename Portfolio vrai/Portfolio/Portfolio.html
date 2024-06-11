@@ -14,7 +14,7 @@
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#a-propos">À propos</a></li>
                 <li><a href="#competences">Compétences</a></li>
-                <li><a href="entreprise.html">Entreprise</a></li> 
+                <li><a href="#entreprise">Entreprise</a></li> 
                 <li><a href="#projets-personnels">Projets Personnels</a></li>
                 <li><a href="#projets-professionnels">Projets Professionnels</a></li>
                 <li><a href="#lien">Lien</a></li> 
@@ -23,10 +23,6 @@
     </header>
 
     <section id="accueil">
-        <section id="accueil" class="section-visible">
-            <!-- Contenu de la section accueil -->
-        </section>
-        
         <h1>Bienvenue sur mon portfolio</h1>
         <p>Je suis actuellement un étudiant en Alternance BTS SIO option SISR.</p>
     </section>
@@ -56,30 +52,36 @@
         <ul>
             <li>
                 <span class="competence" data-percentage="25">HTML et CSS</span>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 25%;"></div>
-                </div>
             </li>
             <li>
                 <span class="competence" data-percentage="70">Réparation informatique en général</span>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 70%;"></div>
-                </div>
             </li>
             <li>
                 <span class="competence" data-percentage="70">Anglais B2</span>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 70%;"></div>
-                </div>
             </li>
         </ul>
     </section>
-       
+
     <section id="entreprise">
-        <h1>Septeo</h1>
-        <img src="C:\Users\Thoma\Desktop\Portfolio vrai\Portfolio\entreprise.jpg" alt="Entreprise">
-        <p>Je suis actuellement un étudiant en Alternance BTS SIO option SISR.</p>
-    </section>
+        <h2><center>Septeo</center></h2>
+        <div class="entreprise-container">
+            <img class="entreprise-image" src="C:\Users\Thoma\Downloads\PortfolioVrai\Portfolio vrai\Portfolio\Septeo-logo.svg-removebg-preview.png" alt="Entreprise">
+            <p>Je suis actuellement étudiant en alternance BTS SIO option SISR chez Septeo. Septeo est une entreprise spécialisée dans les solutions informatiques pour les professionnels du droit et de l'immobilier. Elle offre une large gamme de logiciels et services pour améliorer l'efficacité et la productivité des entreprises.</p>
+            <div class="entreprise-gallery">
+                <img src="C:\Users\Thoma\Downloads\Septeoavocatimage-removebg-preview.png" alt="Image 1">
+                <img src="C:\Users\Thoma\Downloads\Azko-removebg-preview.png" alt="Image 2">
+                <img src="C:\Users\Thoma\Downloads\kivia-494.98x130.51-removebg-preview.png" alt="Image 3">
+            </div>
+        </div>
+        <div class="missions-info">
+            <h2>Mes missions</h2>
+            <p>En tant qu'assistant informatique chez Septeo Solutions Avocats, mes missions principales consistent à aider les avocats avec leurs problèmes informatiques. Cela inclut notamment la résolution de problèmes courants sur les logiciels tels qu'Office 365, ainsi que sur les logiciels spécifiques que nous vendons comme Secib Neo, Secib Air, et Dicta Plus.</p>
+        </div>
+        <div class="image-bureau">
+            <img src="chemin_de_votre_image.jpg" alt="Photo de votre bureau">
+        </div>
+    </div>
+    </section>    
 
     <section id="projets-personnels">
         <h2>Projets Personnels</h2>
@@ -116,7 +118,7 @@
                 <a href="projet3.html">
                     <img src="C:\Users\Thoma\OneDrive\Bureau\Portfolio\Projet personnel 1\Screenshot_20240531_013428_One UI Home.jpg" alt="Description de l'image" width="200" height="100">
                 </a>
-                <div class="project-description">Site crée en classe à plusieur</div>
+                <div class="project-description">Site créé en classe à plusieurs</div>
             </div>
         </div>
         <div class="projet">
@@ -124,7 +126,7 @@
                 <a href="projet4.html">
                     <img src="C:\Users\Thoma\OneDrive\Bureau\Portfolio\linux.svg.png" alt="Image Projet Personnel 2">
                 </a>
-                <div class="project-description">Projet de recensement </div>
+                <div class="project-description">Projet de recensement</div>
             </div>
         </div>
     </section>    
@@ -186,5 +188,6 @@
             });
         });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
