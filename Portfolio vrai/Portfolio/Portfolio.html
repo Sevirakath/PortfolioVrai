@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <button id="mode-toggle">Mode Nuit / Jour</button>
     <header>
         <div class="nom-prenom">STEFANI Thomas</div>
         <nav>
@@ -38,11 +39,11 @@
             </div>
             <div class="suivi-vie">
                 <h2>Suivi de vie</h2>
-                <p>2018-2020 -Bac Technologique STI2D, lycée Jean François Champollion</p>
-                <p>2020-2021 IUT MONTPELLIER Du acces Nouvelle formation créée specialement cette année appellée "Du acces".</p>
-                <p>2021-2022 Employé polyvalent à Mcdonald </p>
-                <p>2022-2023 ETPA école de jeux vidéo Programmation informatique</p>
-                <p>2023-2025 Esicad BTS SIO Système informatique aux organisation option SISR en alternance chez SEPTEO</p>
+                <p>2018-2020 - Bac Technologique STI2D, lycée Jean François Champollion</p>
+                <p>2020-2021 - IUT MONTPELLIER Du Accès, Nouvelle formation créée spécialement cette année appelée "Du Accès".</p>
+                <p>2021-2022 - Employé polyvalent à McDonald's</p>
+                <p>2022-2023 - ETPA école de jeux vidéo, Programmation informatique</p>
+                <p>2023-2025 - Esicad BTS SIO Système informatique aux organisations option SISR en alternance chez SEPTEO</p>
             </div>
         </div>
     </section>
@@ -80,7 +81,6 @@
         <div class="image-bureau">
             <img src="chemin_de_votre_image.jpg" alt="Photo de votre bureau">
         </div>
-    </div>
     </section>    
 
     <section id="projets-personnels">
@@ -147,7 +147,7 @@
         </form>
     </section>
 
-    <section id="lien">
+    <section id="lien" class="lien-section">
         <h2>Liens</h2>
         <div class="liens">
             <div class="lien">
@@ -161,7 +161,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section>    
 
     <footer>
         <p>&copy; 2024 STEFANI Thomas. Tous droits réservés.</p>
@@ -182,8 +182,8 @@
                         section.classList.remove('section-visible');
                     });
 
-                    // Supprimer la classe de la section cible pour la rendre visible avec un effet de "slide"
-                    targetSection.classList.add('section-visible');
+                    // Afficher la section cible
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
                 });
             });
         });

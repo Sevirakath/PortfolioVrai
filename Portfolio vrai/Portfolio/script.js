@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('nav ul li a');
+    const modeToggle = document.getElementById('mode-toggle');
+    const body = document.body;
 
     navLinks.forEach(link => {
         link.addEventListener('click', function (event) {
@@ -39,5 +41,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         progressBar.appendChild(progress);
         skill.appendChild(progressBar);
+    });
+
+    // Fonction pour activer le mode nuit / jour
+    modeToggle.addEventListener('click', function() {
+        body.classList.toggle('dark-mode');
     });
 });

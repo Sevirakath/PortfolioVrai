@@ -208,8 +208,10 @@ nav ul li:nth-last-child(2) {
 }
 
 #lien {
-    padding: 2em;
-    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 #lien h2 {
@@ -342,8 +344,8 @@ nav ul li:nth-last-child(2) {
 }
 
 .missions-info {
-    background-color: rgba(255, 255, 255, 0.2); /* Fond semi-transparent */
-    padding: 20px; /* Espacement à l'intérieur */
+    background-color: rgba(255, 255, 255, 0); /* Couleur de fond avec une opacité de 80% */
+    padding: 20px; /* Ajoute un peu d'espace intérieur pour plus de lisibilité */
 }
 
 .image-container {
@@ -353,4 +355,16 @@ nav ul li:nth-last-child(2) {
 .image-container img {
     max-width: 100%;
     height: auto;
+}
+.lien-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.dark-mode {
+    /* Styles pour le mode sombre */
+    background-color: #1a1a1a;
+    color: white;
 }
