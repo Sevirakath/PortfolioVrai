@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Informatique</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <button id="mode-toggle">Mode Nuit / Jour</button>
-    <header>
+    <div class="header-left">
+        <img src="../images/matronche.jpg" alt="Votre Nom" class="profile-pic">
         <div class="nom-prenom">STEFANI Thomas</div>
-        <nav>
+    </div>
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#a-propos">À propos</a></li>
@@ -18,6 +18,7 @@
                 <li><a href="#entreprise">Entreprise</a></li> 
                 <li><a href="#projets-personnels">Projets Personnels</a></li>
                 <li><a href="#projets-professionnels">Projets Professionnels</a></li>
+                <li><a href="veille-informatique">veille-informatique</a></li>
                 <li><a href="#lien">Lien</a></li> 
             </ul>
         </nav>
@@ -31,7 +32,7 @@
     <section id="a-propos">
         <div class="conteneur">
             <div class="presentation">
-                <img src="C:\Users\Thoma\Downloads\PortfolioVrai\Portfolio vrai\Portfolio\matronche.jpg" alt="Votre Nom">
+                <img src="../images/matronche.jpg" alt="Votre Nom">
                 <div class="presentation-text">
                     <h2>Présentation</h2>
                     <p>Je suis passionné par l'informatique depuis tout petit et rêve d'en faire mon métier, surtout dans le domaine des réseaux et de l'infrastructure. Je suis actuellement étudiant en BTS SIO option SISR.</p>
@@ -66,12 +67,12 @@
     <section id="entreprise">
         <h2><center>Septeo</center></h2>
         <div class="entreprise-container">
-            <img class="entreprise-image" src="C:\Users\Thoma\Downloads\PortfolioVrai\Portfolio vrai\Portfolio\Septeo-logo.svg-removebg-preview.png" alt="Entreprise">
+            <img class="entreprise-image" src="../images/Septeo-logo.svg-removebg-preview.png alt="Entreprise">
             <p>Je suis actuellement étudiant en alternance BTS SIO option SISR chez Septeo. Septeo est une entreprise spécialisée dans les solutions informatiques pour les professionnels du droit et de l'immobilier. Elle offre une large gamme de logiciels et services pour améliorer l'efficacité et la productivité des entreprises.</p>
             <div class="entreprise-gallery">
-                <img src="C:\Users\Thoma\Downloads\Septeoavocatimage-removebg-preview.png" alt="Image 1">
-                <img src="C:\Users\Thoma\Downloads\Azko-removebg-preview.png" alt="Image 2">
-                <img src="C:\Users\Thoma\Downloads\kivia-494.98x130.51-removebg-preview.png" alt="Image 3">
+                <img src="../images/Septeoavocat.png" alt="Image 1">
+                <img src="../images/Azko.png alt="Image 2">
+                <img src="../images/kivia.png alt="Image 3">
             </div>
         </div>
         <div class="missions-info">
@@ -88,7 +89,7 @@
         <div class="projet">
             <div class="project">
                 <a href="projet1.html">
-                    <img src="C:\Users\Thoma\Downloads\PortfolioVrai\Portfolio vrai\Portfolio\Projet personnel 1\Screenshot_20240531_013428_One UI Home.jpg" alt="Description de l'image" width="200" height="100">
+                    <img src="../images/flutter.png alt="Description de l'image" width="200" height="100">
                 </a>
                 <div class="project-description">Voici mon projet personnel qui consiste à créer une application pour avoir le flux RSS d'un jeu vidéo pour avoir toutes les actualités.</div>
             </div>
@@ -96,7 +97,7 @@
         <div class="projet">
             <div class="project">
                 <a href="projet2.html">
-                    <img src="C:\Users\Thoma\Downloads\PortfolioVrai\Portfolio vrai\Portfolio\linux.svg.png" alt="Image Projet Personnel 2">
+                    <img src="../images/linux.svg.png alt="Image Projet Personnel 2">
                 </a>
                 <div class="project-description">Projet en cours sur la création de deux serveurs (un serveur web et un serveur de jeu vidéo).</div>
             </div>
@@ -104,7 +105,7 @@
         <div class="projet">
             <div class="project">
                 <a href="projet5.html">
-                    <img src="C:\Users\Thoma\Downloads\PortfolioVrai\Portfolio vrai\Portfolio\windows server.png" alt="Image Projet Personnel 2">
+                    <img src="../images/windows_server.png" alt="Image Projet Personnel 2">
                 </a>
                 <div class="project-description">Création d'un serveur de jeux vidéo avec HeidiSQL et Mariadb.</div>
             </div>
@@ -152,12 +153,12 @@
         <div class="liens">
             <div class="lien">
                 <a href="https://www.linkedin.com/in/thomas-s-b4975b1b5/" target="_blank">
-                    <img src="C:\Users\Thoma\Downloads\PortfolioVrai\Portfolio vrai\Portfolio\linkedin.png" alt="LinkedIn" width="100">
+                    <img src="../images/linkedin.png alt="LinkedIn" width="100">
                 </a>
             </div>
             <div class="lien">
                 <a href="C:\Users\Thoma\OneDrive\Bureau\Portfolio\cv.pdf" target="_blank">
-                    <img src="C:\Users\Thoma\Downloads\PortfolioVrai\Portfolio vrai\Portfolio\CV logo.jpg" alt="CV" width="100">
+                    <img src="../images/cv_logo.jpg alt="CV" width="100">
                 </a>
             </div>
         </div>
@@ -188,6 +189,6 @@
             });
         });
     </script>
-    <script src="script.js"></script>
+    <script src="../script/script.js" ></script>
 </body>
 </html>

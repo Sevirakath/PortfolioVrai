@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("Background.gif");
+    background-image: url("../images/Background.gif");
     background-size: cover;
     background-repeat: no-repeat;
     color: white; /* Assurez-vous que le texte est visible sur le fond */
@@ -18,7 +18,12 @@ header {
     top: 0;
     z-index: 1000;
 }
-
+.profil-pic{
+    width: 100px; /* Réduire la largeur de l'image */
+    border-radius: 50%;
+    margin-right: 20px; /* Espace entre l'image et le texte */
+    object-fit: cover;
+}
 .nom-prenom {
     margin-left: 20px;
     font-size: 2em;
@@ -362,9 +367,4 @@ nav ul li:nth-last-child(2) {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-.dark-mode {
-    /* Styles pour le mode sombre */
-    background-color: #1a1a1a;
-    color: white;
 }
