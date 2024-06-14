@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const navLinks = document.querySelectorAll('nav ul li a');
+    const navLinks = document.querySelectorAll('nav a');
     const modeToggle = document.getElementById('mode-toggle');
     const body = document.body;
 

@@ -7,26 +7,26 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <div class="header-left">
-        <img src="../images/matronche.jpg" alt="Votre Nom" class="profile-pic">
-        <div class="nom-prenom">STEFANI Thomas</div>
-    </div>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#a-propos">À propos</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#entreprise">Entreprise</a></li> 
-                <li><a href="#projets-personnels">Projets Personnels</a></li>
-                <li><a href="#projets-professionnels">Projets Professionnels</a></li>
-                <li><a href="veille-informatique">veille-informatique</a></li>
-                <li><a href="#lien">Lien</a></li> 
-            </ul>
+    <header>
+        <div class="profil-container">
+            <img src="../images/matronche.jpg" alt="Votre Nom" class="profil">
+            <div class="nom-prenom">STEFANI Thomas</div>
+        </div>
+        <nav class="menu">
+            <a href="#accueil">Accueil</a>
+            <a href="#a-propos">À propos</a>
+            <a href="#competences">Compétences</a>
+            <a href="#entreprise">Entreprise</a>
+            <a href="#projets-personnels">Projets Personnels</a>
+            <a href="#projets-professionnels">Projets Professionnels</a>
+            <a href="#veille-informatique">Veille Informatique</a>
+            <a href="#lien">Lien</a>
         </nav>
     </header>
 
-    <section id="accueil">
+    <section id="accueil" >
         <h1>Bienvenue sur mon portfolio</h1>
-        <p>Je suis actuellement un étudiant en Alternance BTS SIO option SISR.</p>
+        <p>Je suis passionné par l'informatique depuis toujours et je me spécialise dans les réseaux et l'infrastructure. Découvrez mes projets et compétences en cliquant sur les boutons.</p>
     </section>
     
     <section id="a-propos">
@@ -67,20 +67,17 @@
     <section id="entreprise">
         <h2><center>Septeo</center></h2>
         <div class="entreprise-container">
-            <img class="entreprise-image" src="../images/Septeo-logo.svg-removebg-preview.png alt="Entreprise">
+            <img class="entreprise-image" src="../images/Septeo-logo.svg-removebg-preview.png"Entreprise">
             <p>Je suis actuellement étudiant en alternance BTS SIO option SISR chez Septeo. Septeo est une entreprise spécialisée dans les solutions informatiques pour les professionnels du droit et de l'immobilier. Elle offre une large gamme de logiciels et services pour améliorer l'efficacité et la productivité des entreprises.</p>
             <div class="entreprise-gallery">
                 <img src="../images/Septeoavocat.png" alt="Image 1">
-                <img src="../images/Azko.png alt="Image 2">
-                <img src="../images/kivia.png alt="Image 3">
+                <img src="../images/Azko.png"Image 2">
+                <img src="../images/kivia.png" 3">
             </div>
         </div>
         <div class="missions-info">
             <h2>Mes missions</h2>
             <p>En tant qu'assistant informatique chez Septeo Solutions Avocats, mes missions principales consistent à aider les avocats avec leurs problèmes informatiques. Cela inclut notamment la résolution de problèmes courants sur les logiciels tels qu'Office 365, ainsi que sur les logiciels spécifiques que nous vendons comme Secib Neo, Secib Air, et Dicta Plus.</p>
-        </div>
-        <div class="image-bureau">
-            <img src="chemin_de_votre_image.jpg" alt="Photo de votre bureau">
         </div>
     </section>    
 
@@ -89,7 +86,7 @@
         <div class="projet">
             <div class="project">
                 <a href="projet1.html">
-                    <img src="../images/flutter.png alt="Description de l'image" width="200" height="100">
+                    <img src="../images/flutter.png" alt="Description de l'image" width="200" height="100">
                 </a>
                 <div class="project-description">Voici mon projet personnel qui consiste à créer une application pour avoir le flux RSS d'un jeu vidéo pour avoir toutes les actualités.</div>
             </div>
@@ -97,7 +94,7 @@
         <div class="projet">
             <div class="project">
                 <a href="projet2.html">
-                    <img src="../images/linux.svg.png alt="Image Projet Personnel 2">
+                    <img src="../images/linux.svg.png" alt="Image Projet Personnel 2" width="200" height="100">
                 </a>
                 <div class="project-description">Projet en cours sur la création de deux serveurs (un serveur web et un serveur de jeu vidéo).</div>
             </div>
@@ -105,7 +102,7 @@
         <div class="projet">
             <div class="project">
                 <a href="projet5.html">
-                    <img src="../images/windows_server.png" alt="Image Projet Personnel 2">
+                    <img src="../images/windows_server.png" alt="Image Projet Personnel 2" width="200" height="100">
                 </a>
                 <div class="project-description">Création d'un serveur de jeux vidéo avec HeidiSQL et Mariadb.</div>
             </div>
@@ -163,6 +160,24 @@
             </div>
         </div>
     </section>    
+    <section id="veille-informatique">
+        <h2>Veille Informatique</h2>
+        <div class="veille-container">
+            <h3>Qu'est-ce que la veille informatique ?</h3>
+            <p>La veille informatique est un processus continu de recherche, de collecte et d'analyse d'informations sur les évolutions technologiques, les innovations et les tendances dans le domaine de l'informatique. Elle permet aux professionnels de rester informés des dernières avancées et de s'adapter aux changements rapides du secteur.</p>
+            
+            <h3>Mon projet Flutter : Application de flux RSS de jeux vidéo</h3>
+            <p>Dans le cadre de ma veille informatique, j'ai développé une application Flutter permettant de récupérer et d'afficher les flux RSS d'un site de jeux vidéo. Ce projet a pour objectif de fournir une source d'actualités constamment mise à jour, offrant ainsi aux utilisateurs les dernières informations et nouveautés du jeux vidéo en question.</p>
+            <p>Grâce à cette application, les utilisateurs peuvent suivre facilement l'actualité de leurs jeu préférés, sans avoir à visiter plusieurs sites web. L'application collecte automatiquement les flux RSS et les présente de manière claire et organisée, assurant un accès rapide et pratique aux informations pertinentes.</p>
+            <div class="project">
+                <a href="projet1.html">
+                    <center><img src="../images/flutter.png" alt="Description de l'image" width="200" height="200"></center>
+                </a>
+                <div class="project-description">Voici mon projet personnel qui consiste à créer une application pour avoir le flux RSS d'un jeu vidéo pour avoir toutes les actualités.</div>
+            </div>
+        </div>
+    </section>    
+    
 
     <footer>
         <p>&copy; 2024 STEFANI Thomas. Tous droits réservés.</p>
