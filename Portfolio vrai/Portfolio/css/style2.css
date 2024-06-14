@@ -2,6 +2,39 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url("../images/Background.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white; /* Assurez-vous que le texte est visible sur le fond */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.menu {
+    display: flex;
+    gap: 20px; /* Espace entre les boutons */
+    padding-right: 5%;
+    
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .projet {
@@ -19,7 +52,7 @@ body {
 }
 
 .projet .project img {
-    max-width: 50%; /* Ajuste la largeur de l'image pour remplir son conteneur */
+    max-width: 100%; /* Ajuste la largeur de l'image pour remplir son conteneur */
     height: auto; /* Permet à l'image de conserver son ratio hauteur/largeur */
     display: block;
 }
@@ -102,7 +135,7 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     text-align: center;
     padding: 0.3em 0;
